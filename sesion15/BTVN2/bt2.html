@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 1</title>
+    <link rel="stylesheet" href="bt2.css">
+</head>
+<body>
+    <form action="#" id="form">
+        <h1>ĐĂNG KÝ</h1>
+        <div class="class">
+            <label>Name: </label>
+            <input type="text" id="name"><br>
+        </div>
+        <div class="class">
+            <label>Year of Birth: </label> 
+            <select name="year" id="year">
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+            </select><br>
+        </div>
+        <div class="class">
+            <label>Gender: </label>
+            <input type="radio" value="male" id="male" name="sex">Nam
+            <input type="radio" value="female" id="female" name="sex">Nữ <br><br>
+        </div>               
+        <center>
+            <input type="button" name="OK" id="OK" value="Submit" onclick="getInfo()" style="height: 20px; width: 70px; font-weight: bold;">
+        </center>      
+    </form>
+    <div id="form1">
+        <label>Name: </label><p id="name1"></p>
+        <label>Year of Birth: </label><p id="birth"></p>
+        <label>Avatar: </label><img id="avatar" src="" alt="avatar">        
+    </div>
+    <script src="bt2.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="tiendien.css">	
+</head>
+<body>
+ <div id="wrapper">
+ <h1>BẢNG TÍNH TIỀN ĐIỆN</h1>
+    <form id="formDemo" method="post">
+    <fieldset>
+      <div>
+        <label>Họ tên<span>*</span></label>
+        <input type="text" placeholder="Họ Và Tên" name="username" id="name"><br>
+      </div>
+      <div>
+         <label>Địa chỉ<span>*</span></label>
+        <textarea rows="4" cols="40" placeholder="Tổ - Phường - Thị xã" name="address" id="add"></textarea>
+      </div>
+      <div>
+        <label>Điện Thoại<span>*</span></label>
+        <input type="tel" placeholder="Số điện thoại" name="tel" id="tel"><br>
+      </div>            
+    </fieldset>
+    <fieldset>
+    	<div>
+    		<label>Ngày đầu kì<span>*</span></label>
+    		<input type="date" name="ngaydauki" id="day1">
+    	</div>
+    	<div>
+    		<label>Ngày cuối kì<span>*</span></label>
+    		<input type="date" name="ngaycuoiki" id="day2">
+    	</div>
+    	<div>
+    		<label>Số đầu kì<span>*</span></label>
+    		<input type="number" name="sodauki" id="number1">
+    	</div>
+    	<div>
+    		<label>Số cuối kì<span>*</span></label>
+    		<input type="number" name="socuoiki" id="number2">
+    	</div>
+    	<div>
+    		<label>Ghi chú</label>
+    		<textarea rows="2" cols="40" placeholder="Ghi chú" id="note"></textarea>
+    	</div>
+    </fieldset>
+    	 <div class="input-submit">
+			<input type="button" name="tinh" value="TÍNH" id="submit" style="height: 40px; width: 100px; font-weight: bold; color: black" onclick="soTienDien()">
+   		</div>   
+  </form>
+	<div id="hoadon">
+		<h3>HÓA ĐƠN</h3>
+		<table>
+			<tr>
+				<td class="col1">Họ tên</td>
+				<td ><p id="hd-name"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Địa chỉ</td>
+				<td><p id="hd-addr"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Số điện thoại</td>
+				<td><p id="hd-tel"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Ngày đầu kì</td>
+				<td><p id="hd-fdate"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Ngày cuối kì</td>
+				<td><p id="hd-ldate"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Số đầu kì</td>
+				<td><p id="hd-fnum"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Số cuối kì</td>
+				<td><p id="hd-lnum"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Ghi chú</td>
+				<td> <p id="hd-note"></p></td>
+			</tr>
+			<tr>
+				<td class="col1">Thành tiền</td>
+				<td><p id="hd-total"></p></td>
+			</tr>
+
+		</table>
+
+	</div>
+
+  	<script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+  	<script type="text/javascript" src="jquery.validate.min.js"></script>
+  	<script type="text/javascript" src="tiendien.js"></script>
+</div>
+</body>
+</html>

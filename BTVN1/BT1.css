@@ -1,0 +1,90 @@
+#container {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid green;
+}
+header {
+	height: 150px;
+	border: 1px solid green;
+}
+header .logo {
+	height: 100px;
+	width: 30%;
+	float: left;
+	border: 1px solid green;
+	text-align: center;
+}
+header .banner {
+	height: 100px;
+	width: 69%;
+	float: left;
+	border: 1px solid green;
+	text-align: center;
+}
+header .menu {
+	clear: both;
+	height: 48px;
+	border: 1px solid green;
+	text-align: center;
+}
+#main {
+	height: 800px;
+}
+.main1-left {
+	width: 46.5%;
+	height: 200px;
+	border: 1px solid green;
+	float: left;
+	text-align: center;
+}
+.main1-right {
+	float: left;
+	width: 53%;
+	border: 1px solid green;
+	height: 200px;
+}
+.main1-right-content{
+	border: 1px solid green;
+	height: 65px;
+	text-align: center;
+}
+.main2-left{
+	float: left;
+	width: 65%;
+	border: 1px solid black;
+	height: 600px;
+}
+.main2-left-content{
+	border: 1px solid black;
+	height: 148px;
+	text-align: center;
+}
+.main2-right{
+	float: left;
+	width: 34.3%;
+	border: 1px solid green;
+	height: 600px;
+}
+.main2-right-content{
+	height: 198px;
+	text-align: center;
+	border: 1px solid green;
+}
+
+#footer{
+	height: 80px;
+}
+.footer1-left{
+	width: 28.8%;
+	height: 76px;
+	float: left;
+	border: 1px solid black;
+	text-align: center;
+}
+.footer2-right{
+	width: 70.6%;
+	height: 76px;
+	float: right;
+	border: 1px solid black;
+	text-align: center;
+}

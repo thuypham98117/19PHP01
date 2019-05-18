@@ -1,0 +1,39 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+img{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+#d1{
+	float: left;
+	width: 100%;
+}
+#d1 .h{
+	margin-top: 20px;
+}
+#d2{
+	float: left;
+	width: 61%;
+	border-right: 2px solid red;
+	padding-left: 20px;
+}
+#d2-2{
+	padding-top: 10px;
+}
+#d3{
+	float: left;
+	width: 35%;
+	padding: 10px;
+}
+#d3-2{
+	padding-top: 40px;
+}
+h4{
+	color: green;
+}
+hr{
+	clear: both;
+}
