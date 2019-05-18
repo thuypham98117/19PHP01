@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="jquery.bxslider.css">
+	<link rel="stylesheet" type="text/css" href="web.css">
+	<link rel="stylesheet" href="slicknav.css">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script> 	
+	<title>BTVN</title>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<img src="images/2.jpg" width=100% height=350>
+			<div id="menu">
+				<font size="5">
+					  <a href="#">Trang chủ</a>
+					  <a href="#">Giới thiệu</a>
+					  <a href="#">Dịch vụ</a>
+					  <a href="#">Sản phẩm</a>
+					  <a href="#">Liên hệ</a>
+				</font>
+			</div>
+		</header>
+		<article>
+			<div class ="slider">
+				<img class="slide-box" src="images/6.jpg" />
+				<img class="slide-box" src="images/7.jpg" />
+				<img class="slide-box" src="images/8.jpg" />
+				<img class="slide-box" src="images/9.jpg" />
+			</div>		
+		</article>
+	</div>
+	
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="jquery.slicknav.js"></script>
+	<script src="jquery.bxslider.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.slider').bxSlider({
+			mode: 'horizontal',
+			moveSlides: 1,
+			slideMargin: 40,
+			infiniteLoop: true,
+			slideWidth: 660,
+			minSlides: 3,
+			maxSlides: 3,
+			speed: 800,
+		});
+		$('#menu').slicknav();
+	});
+</script>
+</body>
+</html>
